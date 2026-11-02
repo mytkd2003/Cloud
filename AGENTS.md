@@ -15,7 +15,7 @@ The authorized private archive is stored in the connected user's Google Drive:
 - Canonical file: https://drive.google.com/file/d/1NnmN9IblILRfyEK5wEXnFLj3lIqXMqwK/view?usp=drivesdk
 - File ID: 1NnmN9IblILRfyEK5wEXnFLj3lIqXMqwK
 - MIME type: application/zip
-- SHA-256 of this snapshot: 2f9c4a8601827beea57306473e1425cbe7e90178d5ad80732bd574a2365e5f1a
+- SHA-256 of this snapshot: 4ab8786775d1913d93e718b9a7f99552f571d1f5edb52601acbfc72603def872
 
 Use the exact file ID/URL above; Drive search may lag behind newly created files. Read file metadata, then call google_drive_fetch with download_raw_file=true and include_base64=false. Materialize the returned file reference in the current workspace. If it returns a sediment:// reference, use download_file with the file ID without the scheme. Do not use temporary signed URLs as permanent configuration.
 
